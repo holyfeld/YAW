@@ -1,0 +1,23 @@
+{
+  "name": "yaw",
+  "version": "1.0.0",
+  "description": "display Westrum questions",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holyfeld/YAW.git"
+  },
+  "keywords": [
+    "Organization",
+    "Culture"
+  ],
+  "author": "Don Gray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holyfeld/YAW/issues"
+  },
+  "homepage": "https://github.com/holyfeld/YAW#readme"
+}
