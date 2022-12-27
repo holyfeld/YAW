@@ -8,9 +8,9 @@ let buildDiv = require ('../js/buildForm.js');
 let assert = require ('assert');
 
 describe('make sure we have a complete row of data', function() {
-  describe('check the first field',function() {
+  describe('buildDiv',function() {
     it('should be Orientation', function() {
-      assert.equal('Orientation'. dataRow[0]);
+      assert.equal('Orientation', buildDiv(dataRow[0]));
     });
 
   });
