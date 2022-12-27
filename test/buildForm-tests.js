@@ -4,7 +4,6 @@
 
 //'use strict'; // just because I think it's a good idea
 
-let buildDiv = require ('../js/buildForm.js'); 
 let assert = require ('assert');
 const checkFormData = require('../js/buildForm.js');
 
