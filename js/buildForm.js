@@ -10,9 +10,11 @@ const formData = [
      cripple: "Rule Oriented",
      boost: "Performance Oriented"}];
 
- let dataRow = formData[0];
-     
+let dataRow = formData[0];
+
 function buildDiv (dataRow) {
 // take a row from the data array and build division of the form
 
 }
+
+module.exports = buildDiv  
