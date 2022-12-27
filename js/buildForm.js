@@ -1,23 +1,25 @@
 // 
 // javascript code to build a form for getting information about the users org culture
 //
-'use strict';
 
 const formData = [
-    {topic:"Orientation",
-     text: "something useful here",
-     hurt: "Power Oriented",
-     cripple: "Rule Oriented",
-     boost: "Performance Oriented"}];
+    {
+    topic:"Orientation",
+    text: "something useful here",
+    hurt: "Power Oriented",
+    cripple: "Rule Oriented",
+    boost: "Performance Oriented"}
+];
+     
+function checkFormData (rowNumber) {
 
-function buildDiv (rowNumber) {
-// take a row from the data array and build division of the form
+// check the data for the form build
 
-let dataRow = formData[rowNumber];
-
-let numItems = dataRow.length;
-
-return(numItems);
+  numItems = Object.keys(formData[rowNumber]).length
+  // non existent row
+  if (isNaN(numItems)) return undefined;
+// how many items in the row?
+  else return numItems;
 }
 
-module.exports = buildDiv;  
+module.exports = checkFormData;  

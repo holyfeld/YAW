@@ -6,12 +6,16 @@
 
 let buildDiv = require ('../js/buildForm.js'); 
 let assert = require ('assert');
+const checkFormData = require('../js/buildForm.js');
 
 describe('make sure we have a complete row of data', function() {
-  describe('buildDiv',function() {
+  describe('checkFormData',function() {
     it('should have 5 elements', function() {
-      assert.equal(5, buildDiv(0));
+      assert.equal(5, checkFormData(0));
     });
+    it('should not have this row', function() {
+      assert.equal(undefined, checkFormData(1));
+    });    
 
   });
 
