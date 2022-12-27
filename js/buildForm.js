@@ -15,9 +15,9 @@ function buildDiv (rowNumber) {
 
 let dataRow = formData[rowNumber];
 
-let length = dataRow.length
+let numItems = dataRow.length;
 
-return(length);
+return(numItems);
 }
 
-module.exports = buildDiv  
+module.exports = buildDiv;  
