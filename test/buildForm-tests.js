@@ -13,7 +13,7 @@ describe('make sure we have a complete data', function() {
       assert.equal(5, checkFormData(0));
     });
     it('should not have this row', function() {
-      assert.equal(undefined, checkFormData(1));
+      assert.equal(0, checkFormData(1));
     });    
 
   });

@@ -18,8 +18,8 @@ function checkFormData (rowNumber) {
     numItems = Object.keys(formData[rowNumber]).length  
     return numItems;
   }
-  catch {
-    return undefined;
+  catch (err) {
+    return 0;
   }
 // how many items in the row?
 }
