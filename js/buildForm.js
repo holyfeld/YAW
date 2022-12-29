@@ -14,11 +14,18 @@ const formData = [
 function checkFormData (rowNumber) {
 
 // check the data for the form build
-
-  numItems = Object.keys(formData[rowNumber]).length
-  
+  try {
+    numItems = Object.keys(formData[rowNumber]).length  
+    return numItems;
+  }
+  catch {
+    return undefined;
+  }
 // how many items in the row?
-  return numItems;
 }
 
 module.exports = checkFormData;  
+
+// for local testing
+//result = checkFormData(1);
+//console.log(result);
