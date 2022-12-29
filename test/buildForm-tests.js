@@ -12,6 +12,7 @@ describe('make sure we have a complete data', function() {
     it('should have 5 elements', function() {
       assert.equal(5, checkFormData(0));
     });
+    // if this fails, it means someone added a row to the array
     it('should not have this row', function() {
       assert.equal(0, checkFormData(1));
     });    
